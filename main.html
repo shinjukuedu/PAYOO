@@ -48,7 +48,7 @@
                     <p>Pay Bill</p>
                 </div>
                 <!-- final div  -->
-                  <div class="box border rounded-sm p-1  text-center">
+                  <div id="transaction-history" class="box border rounded-sm p-1  text-center">
                     <img class="w-6 mx-auto" src="./assets/send1.png" alt="">
                     <p>Transaction</p>
                 </div>
@@ -61,7 +61,7 @@
             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
                 <legend required>Select Bank</legend>
-                <select  class="select select-success">
+                <select id="allBank"  class="select select-success">
                     <option disabled selected> Select Bank</option>
                     <option value="bkash">Bkash</option>
                     <option  value="nagad">Nagad</option>
@@ -97,13 +97,23 @@
                 </fieldset>
 
         </section>
+        <!-- transcation section  -->
+         <section id="transcation-box">
+            <h1 class="text-red-500 text-3xl text-center">Transaction History</h1>
+            <div id="transaction-container">
+
+            </div>
+         </section>
         </section>
 
        </section>
        </header>
-        
-    <script src="./js/addMoney.js"></script>
-    <script src="./js/toggle.js"></script>
-    <script src="./js/cashout.js"></script>
+       <script src="./utilities/togglee.js"></script>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./js/addMoneys.js"></script>
+    <script src="./js/cashOuts.js"></script>
+    <script src="./js/transcationHistory.js"></script>
+    <!-- <script src="./js/toggle.js"></script>
+    <script src="./js/cashout.js"></script> -->
 </body>
 </html>
